@@ -3,40 +3,52 @@ import java.util.Scanner;
 public class CadastroUsuario {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
-        // Boas-vindas
-        System.out.println("Seja bem-vindo ao sistema de cadastro!");
-        System.out.println("--------------------------------------");
+        System.out.println("=== Sistema de Cadastro de Usuário ===");
 
-        // Entrada de dados
+        String nome = lerNome(scanner);
+        String cpf = lerCpf(scanner);
+        int idade = lerIdade(scanner);
+        double peso = lerPeso(scanner);
+        double altura = lerAltura(scanner);
+
+        exibirDados(nome, cpf, idade, peso, altura);
+
+        scanner.close();
+    }
+
+    private static String lerNome(Scanner scanner) {
         System.out.print("Digite seu nome completo: ");
-        String nome = scanner.nextLine();
+        return scanner.nextLine();
+    }
 
+    private static String lerCpf(Scanner scanner) {
         System.out.print("Digite seu CPF: ");
-        String cpf = scanner.nextLine();
+        return scanner.nextLine();
+    }
 
+    private static int lerIdade(Scanner scanner) {
         System.out.print("Digite sua idade: ");
-        int idade = scanner.nextInt();
+        return scanner.nextInt();
+    }
 
-        System.out.print("Digite seu peso (ex: 70.5): ");
-        double peso = scanner.nextDouble();
+    private static double lerPeso(Scanner scanner) {
+        System.out.print("Digite seu peso (kg): ");
+        return scanner.nextDouble();
+    }
 
-        System.out.print("Digite sua altura (ex: 1.75): ");
-        double altura = scanner.nextDouble();
+    private static double lerAltura(Scanner scanner) {
+        System.out.print("Digite sua altura (m): ");
+        return scanner.nextDouble();
+    }
 
-        scanner.nextLine(); // limpar buffer
-
-
-        // Exibição dos dados
-        System.out.println("\n------ DADOS CADASTRADOS ------");
+    private static void exibirDados(String nome, String cpf, int idade, double peso, double altura) {
+        System.out.println("\n=== Dados Cadastrados ===");
         System.out.println("Nome: " + nome);
         System.out.println("CPF: " + cpf);
         System.out.println("Idade: " + idade + " anos");
         System.out.println("Peso: " + peso + " kg");
         System.out.println("Altura: " + altura + " m");
-      
-         scanner.close();
     }
 }
