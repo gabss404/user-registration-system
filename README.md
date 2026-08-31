@@ -1,29 +1,30 @@
-# 🧾 Sistema de Cadastro de Usuário
+# 🧾 User Registration System
 
-Aplicação simples em Java que realiza o cadastro de um usuário via terminal, coletando dados pessoais e calculando automaticamente o Índice de Massa Corporal (IMC).
-
----
-
-## ⚡ Funcionalidades
-
-- 👤 Cadastro de usuário (nome, CPF, idade)
-- ⚖️ Entrada de dados físicos (peso e altura)
-- 🧮 Cálculo automático do IMC
-- 📊 Classificação do IMC (abaixo do peso, normal, sobrepeso, obesidade)
-- 📃 Exibição organizada dos dados cadastrados
+Simple Java application that registers a user via terminal, collecting personal data and automatically calculating Body Mass Index (BMI).
 
 ---
 
-## 🛠 Tecnologias utilizadas
+## ⚡ Features
+
+- 👤 User registration (name, ID, age)
+- ⚖️ Physical data input (weight and height)
+- 🧮 Automatic BMI calculation
+- 📊 BMI classification (underweight, normal, overweight, obesity)
+- 📃 Organized display of registered data
+
+---
+
+## 🛠 Technologies Used
 
 - Java
-- Programação Orientada a Objetos (estrutura modular)
-- Aplicação via console (CLI)
+- Object-Oriented Programming (modular structure)
+- Console application (CLI)
 
 ---
 
-## 🚀 Como executar
+## 🚀 How to Run
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/gabss404/user-registration-system.git
+```
